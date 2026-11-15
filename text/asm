@@ -1,0 +1,19 @@
+format ELF64 executable
+
+segment readable executable
+entry $
+mov edx, msg_len
+
+mov eax, 1
+mov edi, 1
+lea rsi, [msg]
+syscall
+
+mov eax, 60
+xor edi, edi
+syscall
+
+segment readable
+msg db 'Hello world!', 10
+msg_len = $-msg
+

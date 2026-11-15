@@ -1,0 +1,17 @@
+; Whitespace edge cases
+
+normal line
+    leading spaces
+trailing spaces      
+    both sides    
+	tabs at start
+tabs at end		
+   	   mixed whitespace   
+; comment
+   ; indented comment
+
+another line
+
+; another comment
+
+final line
